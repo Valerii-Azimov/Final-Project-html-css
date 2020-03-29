@@ -1,0 +1,72 @@
+.button {
+  width: 249px;
+  height: 48px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 39px;
+  cursor: pointer;
+
+  &--orange {
+    background-color: map-get($colors, main-color);
+    font-family: $main-font-family;
+    font-size: $button-font-size;
+    font-weight: $secondary-font-weight;
+    color: map-get($colors, third-color);
+    @media screen and (min-width: 703px) and (max-width: 1279px){
+      width: 250px;
+      height: 50px;
+    }
+    @media screen and (min-width: 1280px) and (max-width: 1679px){
+      width: 302px;
+     height: 70px;
+     font-size: $button-1280-font-size;
+     margin-top: 65px;
+    }
+    @media screen and (min-width: 1680px){
+      width: 350px;
+     height: 70px;
+     font-size: $button-1680-font-size;
+     margin-top: 42px;
+    }
+  }
+
+  &--position {
+    @media screen and (max-width: 702px) {
+      @include center-flex($type: 'hor');
+    }
+  }
+
+  &--main {
+    background: transparent;
+    border: 2px solid #ff6b08;
+    width: 250px;
+    height: 48px;
+    font-family: $main-font-family;
+    font-size: $menu-font-size;
+    font-weight: $secondary-font-weight;
+    color: map-get($colors, main-color);
+    margin: 0;
+    display: none;
+
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      display: initial;
+      position: absolute;
+      margin: 0 0 0 371px;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      display: initial;
+      width: 302px;
+      height: 68px;
+    }
+
+    @media screen and (min-width:1680px){
+      display: initial;
+      width: 352px;
+      height: 68px;
+      font-size: $button-1680-font-size;
+    }
+  }
+
+}

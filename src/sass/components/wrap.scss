@@ -1,0 +1,9 @@
+.wrap{
+    &--position{
+        margin-top: 58px;
+        @media screen and (min-width: 703px){
+            @include spase-between-flex ($type: 'all')
+            
+        }
+    }
+}

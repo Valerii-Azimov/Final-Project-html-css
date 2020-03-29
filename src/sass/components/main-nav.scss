@@ -1,0 +1,51 @@
+.main-nav {
+  margin-top: 26px;
+  @include spase-between-flex($type: 'all');
+  @media screen and (min-width:703px) and (max-width:1679px){
+    margin-top: 37px;
+  }
+  @media screen and (min-width:1680px){
+    margin-top: 28px;
+  }
+  &--menu {
+    text-transform: uppercase;
+    font-family: $main-font-family;
+    font-size: $menu-font-size;
+    line-height: $menu-line-hight;
+    font-weight: $secondary-font-weight;
+    display: none;
+    width: 568px;
+    
+    @media screen and (min-width:1280px) {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 173px;
+    }
+    
+  }
+  
+  &--item {
+    color: map-get($colors, secondary-color);
+  }
+
+  &--item:hover {
+    color: map-get($colors, main-color);
+  }
+
+
+
+  @media screen and (min-width:1280px) {
+    &--menu {
+      text-transform: uppercase;
+      font-family: $main-font-family;
+      font-size: $menu-font-size;
+      line-height: $menu-line-hight;
+      font-weight: $secondary-font-weight;
+    }
+  }
+  &--burger {
+    @media screen and (min-width: 1280px){
+      display: none;
+    }
+  }
+}
