@@ -1,0 +1,236 @@
+.section {
+  &--second {
+    min-height: 518px;
+  }
+
+  &__main-problems {
+    position: absolute;
+    background-color: white;
+    width: 280px;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    
+    &--position {
+        position: relative;
+    }
+    &--margin{
+        margin-top: -310px;
+        
+    }
+    &--list {
+      counter-reset: count-box;
+      list-style-type: none;
+      margin-left: 28px;
+      position: relative;
+
+    }
+
+    &--list:last-child {
+      padding-bottom: 34px;
+    }
+
+    &--item {
+      counter-increment: count-box;
+      margin-top: 48px;
+      font-family: $main-font-family;
+      font-size: $advantages-list-font-size;
+      font-weight: $secondary-font-weight;
+      max-width: 202px;
+    }
+
+    &--item::before {
+      content: counter(count-box, decimal-leading-zero);
+      color: $main-color;
+      position: absolute;
+      margin-left: 34px;
+      margin-top: -28px;
+      font-size: $count-font-size;
+      font-weight: $secondary-1280-font-weight;
+    }
+
+    &--line::before {
+      content: "";
+      display: block;
+      width: 25px;
+      border-bottom: 2px solid $main-color;
+      position: absolute;
+      margin-top: -20px;
+    }
+  }
+
+  &__third {
+    margin-top: 38px;
+    position: relative;
+    margin-left: -5px;
+
+    &--item {
+      display: block;
+      min-height: 267px;
+      width: 290px;
+      background-color: white;
+      margin-top: 30px;
+      box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+      transition: 1s all ease;
+    }
+
+    &--item:hover {
+      background-color: $main-color;
+      color: white;
+      transition-duration: 0.8s;
+    }
+
+    &--item:hover &--item-title::after {
+      color: white;
+      transition-duration: 0.8s;
+    }
+
+    &--item:hover &--icon {
+      fill: white;
+      transition-duration: 0.8s;
+    }
+
+    &--item-title {
+      text-align: center;
+      font-family: $main-font-family;
+      font-size: $advantages-list-font-size;
+      font-weight: $secondary-font-weight;
+      padding-top: 20px;
+      max-width: 220px;
+      margin: auto;
+    }
+
+    &--item-title::after {
+      display: block;
+      content: "";
+      width: 27px;
+      border-bottom: 2px solid;
+      color: $main-color;
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 97px;
+
+    }
+
+    &--item-text {
+      text-align: center;
+      font-family: $main-font-family;
+      font-size: $button-font-size;
+      padding-top: 44px;
+      margin: auto;
+      max-width: 248px;
+    }
+
+    &--icon {
+      @include center-flex($type: 'hor');
+      padding-top: 31px;
+    }
+  }
+&__program {
+    position: relative;
+    margin-top: 36px;
+    margin-left: 28px;
+    &--list{
+        counter-reset: count-list-program;
+    }
+    &--list::before{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 1412px;
+        background-color: $fourth-color;
+        position: absolute;
+        margin-left: -28px;
+        margin-top: 11px
+    }
+    // &--border{
+    //     border-left: 2px solid $fourth-color;
+    // }
+    &--item{
+        color: $link-color;
+        counter-increment: count-list-program;
+        max-width: 150px;
+        position: relative;
+        margin-top: 36px;
+        // padding-top: 36px;
+    }
+    // &--position{
+    //     padding-top: 45px;
+    // }
+    &--item::before {
+        content: counter(count-list-program,)" Семестр" ;
+    }
+    &--position{
+        position: relative;
+    }
+    &--position::before{
+        display: block;
+        position: absolute;
+        content: url(../../images/icon/Ellipse.png);
+        margin-top: -32px;
+        margin-left: -32px;
+    }
+    &--text1{
+        color: $main-color;
+        margin-top: 13px;
+        margin-left: 38px;
+        
+    }
+    &--text2{
+        color: $fourth-color;
+        margin-top: 11px;
+    }
+    &--text1::before{
+        display: block;
+        content: "";
+        height: 2px;
+        width: 25px;
+        background-color: $main-color;
+        position: absolute;
+        margin-left: -38px;
+        margin-top: 12px;
+    }
+}
+&__tacher {
+    margin-top: 24px;
+    &--name {
+        margin-top: 24px;
+        font-size: $count-font-size;
+        border-bottom: 1px solid #d1d1d1;
+    }
+    &--list{
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    &--item {
+        font-size: $count-font-size;
+        font-weight: $third-font-weight;
+        max-width: 237px;
+        // margin-left: 20px;
+    }
+    &--list :not(:nth-child(1)){
+        margin-top: 24px;
+    }
+    &--item::before {
+        display: block;
+        content: url(../../images/icon/icon_check.png);
+        position: absolute;
+        margin-left: -35px;
+    }
+    &--info{
+        margin-top: 40px;
+        font-size: $button-font-size;
+        font-weight: $fiveth-font-weight;
+        color: $fourth-color;
+        width: 257px;
+    }
+    &--info-paragraph:not(:nth-child(1)){
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+}

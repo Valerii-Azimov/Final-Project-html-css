@@ -1,12 +1,15 @@
+// text setings
+    // font-family
 $main-font-family: 'Montserrat', sans-serif;
 
-
+    // font-size
 $title-font-size: 20px;
 $title-tablet-font-size: 26px;
 $title-1280-font-size: 48px;
 $title-1680-font-size: 58px;
 $secondary-font-size: 15px;
 $secondary-text-font-size: 18px;
+$third-text-font-size: 20px;
 $secondary-text-1680-font-size: 21px;
 $advantages-list-font-size: 13px;
 $advantages-list-1280-font-size: 21px;
@@ -14,15 +17,20 @@ $menu-font-size: 12px;
 $button-font-size: 11px;
 $button-1280-font-size: 12px;
 $button-1680-font-size: 14px;
+$count-font-size: 13px;
 
+    // line-height
 $title-line-height: 1.5;
 $title-tablet-line-height:1.5;
 $secondary-line-hight: 1.5;
-$menu-line-hight: 9;
+$menu-line-hight: 1.5;
 
+    // font-weight
 $titel-font-weight: 800;
 $secondary-font-weight: bold;
 $secondary-1280-font-weight: 500;
+$third-font-weight: 600;
+$fiveth-font-weight: 400;
 
 
 // Color Map
@@ -30,26 +38,23 @@ $colors: (
     main-color: #ff6b08,
     secondary-color: #b9b9b9,
     third-color: #ffffff,
-
 );
-
+$main-color: #ff6b08;
+$secondary-color: #b9b9b9;
+$third-color: #ffffff;
+$fourth-color: #858585;
+$fiveth-color: #d1d1d1;
 
 // $main-color: #ff6b08;
 // $secondary-color: #b9b9b9;
 
 
-
-
-
-
-
-
-$secondary-link-color: rgb(243, 129, 129);
+// $secondary-link-color: rgb(243, 129, 129);
 $third-color: rgb(51, 51, 51);
-$fourth-color: rgb(153, 153, 153);
-$fiveth-color: rgb(229, 229, 229);
+// $fourth-color: rgb(153, 153, 153);
+// $fiveth-color: rgb(229, 229, 229);
 
-$main-icon-color: rgb(149, 225, 211);
+// $main-icon-color: rgb(149, 225, 211);
 
 $link-color: rgb(255, 255, 255);
 $input-color:rgb(204, 204, 204);

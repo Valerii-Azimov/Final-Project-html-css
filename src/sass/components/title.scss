@@ -1,32 +1,56 @@
 .title {
+  font-family: $main-font-family;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: $titel-font-weight;
   &--main {
-
-    font-family: $main-font-family;
-    font-size: $title-font-size;
-    line-height: $title-line-height;
-    font-weight: $titel-font-weight;
 
     @media screen and (min-width:703px) and (max-width:1279px) {
       font-size: $title-tablet-font-size;
     }
-    @media screen and (min-width:1280px) and (max-width:1679px) {
-        font-size: $title-1280-font-size;
-      }
-      @media screen and (min-width:1680px) {
-        font-size: $title-1680-font-size;
-      }
-  }
-    &--conteiner {
-      width: 264px;
 
-      @media screen and (min-width:703px) and (max-width:1279px) {
-        width: 270px;
-      }
-      @media screen and (min-width:1279px) and (max-width:1679px) {
-        width: 500px;
-      }
-      @media screen and (min-width:1680px) {
-        width: 610px;
-      }
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      font-size: $title-1280-font-size;
+    }
+
+    @media screen and (min-width:1680px) {
+      font-size: $title-1680-font-size;
     }
   }
+
+  &--conteiner {
+    width: 264px;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      width: 270px;
+    }
+
+    @media screen and (min-width:1279px) and (max-width:1679px) {
+      width: 500px;
+    }
+
+    @media screen and (min-width:1680px) {
+      width: 610px;
+    }
+  }
+
+  &--secondary, &__program--text{
+    color: $link-color;
+    padding-top: 52px;
+  }
+  &--third {
+    margin-top: 205px;
+    @include center-flex($type: 'hor');
+  }
+  &__program {
+    text-align: center;
+    &--position {
+      width: 136px;
+    }
+  }
+  &__teacher{
+    &--position{
+      margin-top: 549px;
+    }
+  }
+}
