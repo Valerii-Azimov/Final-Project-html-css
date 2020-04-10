@@ -3,30 +3,33 @@
   height: 48px;
   border: none;
   text-transform: uppercase;
-  margin-top: 39px;
+  margin-top: 30px;
   cursor: pointer;
 
   &--orange {
-    background-color: map-get($colors, main-color);
+    background-color: $main-color;
     font-family: $main-font-family;
     font-size: $button-font-size;
     font-weight: $secondary-font-weight;
-    color: map-get($colors, third-color);
-    @media screen and (min-width: 703px) and (max-width: 1279px){
+    color: $third-color;
+
+    @media screen and (min-width: 703px) and (max-width: 1279px) {
       width: 250px;
       height: 50px;
     }
-    @media screen and (min-width: 1280px) and (max-width: 1679px){
+
+    @media screen and (min-width: 1280px) and (max-width: 1679px) {
       width: 302px;
-     height: 70px;
-     font-size: $button-1280-font-size;
-     margin-top: 65px;
+      height: 70px;
+      font-size: $button-1280-font-size;
+      margin-top: 65px;
     }
-    @media screen and (min-width: 1680px){
+
+    @media screen and (min-width: 1680px) {
       width: 350px;
-     height: 70px;
-     font-size: $button-1680-font-size;
-     margin-top: 42px;
+      height: 70px;
+      font-size: $button-1680-font-size;
+      margin-top: 42px;
     }
   }
 
@@ -44,7 +47,7 @@
     font-family: $main-font-family;
     font-size: $menu-font-size;
     font-weight: $secondary-font-weight;
-    color: map-get($colors, main-color);
+    color: $main-color;
     margin: 0;
     display: none;
 
@@ -61,7 +64,7 @@
       height: 68px;
     }
 
-    @media screen and (min-width:1680px){
+    @media screen and (min-width:1680px) {
       display: initial;
       width: 352px;
       height: 68px;
@@ -69,4 +72,66 @@
     }
   }
 
+  &__slider {
+    width: 21px;
+    height: 11px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width:703px) {
+      top: 48%;
+      width: 26px;
+      height: 15px;
+    }
+
+    &--prev {
+      background-image: url(../../images/icon/prev.png);
+      left: 0;
+
+      @media screen and (min-width:703px) {
+        left: -5%;
+      }
+    }
+
+    &--next {
+      background-image: url(../../images/icon/next.png);
+      right: 0;
+
+      @media screen and (min-width:703px) {
+        right: -5%;
+      }
+    }
+  }
+
+  &--registration {
+    margin-bottom: 58px;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 58px;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      font-size: $button-1680-font-size;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 89px;
+    }
+
+    @media screen and (min-width:1680px) {
+      font-size: $button-1680-font-size;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 101px;
+    }
+  }
 }

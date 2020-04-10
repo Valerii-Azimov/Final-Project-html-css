@@ -1,0 +1,20 @@
+.developers {
+  &--info {
+    color: $eighth-color;
+    font-size: $button-font-size;
+    font-weight: $secondary-1280-font-weight;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      text-align: start;
+    }
+
+    @media screen and (min-width:1280px) {
+      font-size: $secondary-font-size;
+      text-align: start;
+    }
+  }
+
+}

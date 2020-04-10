@@ -4,53 +4,157 @@
   line-height: $title-line-height;
   font-weight: $titel-font-weight;
   &--main {
+    width: 264px;
 
     @media screen and (min-width:703px) and (max-width:1279px) {
       font-size: $title-tablet-font-size;
+      width: 270px;
     }
 
     @media screen and (min-width:1280px) and (max-width:1679px) {
       font-size: $title-1280-font-size;
-    }
-
-    @media screen and (min-width:1680px) {
-      font-size: $title-1680-font-size;
-    }
-  }
-
-  &--conteiner {
-    width: 264px;
-
-    @media screen and (min-width:703px) and (max-width:1279px) {
-      width: 270px;
-    }
-
-    @media screen and (min-width:1279px) and (max-width:1679px) {
       width: 500px;
     }
 
     @media screen and (min-width:1680px) {
+      font-size: $title-1680-font-size;
       width: 610px;
     }
   }
 
-  &--secondary, &__program--text{
-    color: $link-color;
+  &--secondary {
+    color: $third-color;
     padding-top: 52px;
-  }
-  &--third {
-    margin-top: 205px;
-    @include center-flex($type: 'hor');
-  }
-  &__program {
-    text-align: center;
-    &--position {
-      width: 136px;
+    padding-bottom: 347px;
+    @media screen and (min-width:703px) and (max-width:1279px){
+    max-width: 436px;
+    padding-bottom: 193px;
+    font-size: $title-tablet-font-size;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      max-width: 684px;
+    padding-bottom: 193px;
+    font-size: $title2-1280-font-size;
+    }
+    @media screen and (min-width:1680px) {
+      max-width: 761px;
+      padding-bottom: 278px;
+      font-size: $title2-1680-font-size;
     }
   }
+  &--third {
+    margin-top: 243px;
+    @include center-flex($type: 'hor');
+    @media screen and (min-width:703px) and (max-width:1279px){
+      font-size: $title-tablet-font-size;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      font-size: $title2-1280-font-size;
+      @include spase-between-flex($type: 'hor')
+    }
+    @media screen and (min-width:1680px){
+      font-size: $title2-1680-font-size;
+      @include spase-between-flex($type: 'hor')
+    }
+  }
+  &--program{
+    color: $third-color;
+    padding-top: 53px;
+    text-align: start;
+    @media screen and (min-width:703px) and (max-width:1279px){
+      font-size: $title-tablet-font-size;
+      padding-top: 53px;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      font-size: $title2-1280-font-size;
+    }
+    @media screen and (min-width:1680px){
+      font-size: $title2-1680-font-size;
+    }
+  }
+  &--choice{
+    color: $third-color;
+    // padding-top: 46px;
+    width: 136px;
+    position: absolute;
+    margin-top: -454px;
+    
+    @media screen and (min-width:703px) and (max-width:1279px){
+      font-size: $title-tablet-font-size;
+      // padding-top: 174px;
+      // padding-bottom: 160px;
+      width: auto;
+      text-align: center;
+      margin-top: -210px;
+      margin-left: 170px;
+
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      // position: absolute;
+    padding: 0;
+    margin-top: -500px;
+    width: auto;
+    font-size: $title2-1280-font-size;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    @media screen and (min-width:1680px){
+      font-size: $title2-1680-font-size;
+      // position: absolute;
+    padding: 0;
+    margin-top: -348px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+  }
+
+
   &__teacher{
-    &--position{
-      margin-top: 549px;
+    margin-top: 279px;
+    @media screen and (min-width:703px) and (max-width:1279px){
+      margin-top: 248px;
+      font-size: $title-tablet-font-size;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      margin-top: 79px;
+      font-size: $title2-1280-font-size;
+    }
+    @media screen and (min-width:1680px){
+      margin-top: 314px;
+      font-size: $title2-1680-font-size;
+    }
+  }
+
+  &__guarantees{
+    margin-top: 53px;
+    text-align: center;
+    @media screen and (min-width:703px) and (max-width:1279px){
+      font-size: $title-tablet-font-size;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      font-size: $title2-1280-font-size;
+    }
+    @media screen and (min-width:1680px){
+      font-size: $title2-1680-font-size;
+    }
+  }
+
+
+  &__reviews{
+    text-align: center;
+    margin-top: 49px;
+    @media screen and (min-width:703px) and (max-width:1279px){
+      font-size: $title-tablet-font-size;
+      margin-top: 66px;
+    }
+    @media screen and (min-width:1280px) and (max-width:1679px){
+      font-size: $title2-1280-font-size;
+      margin-top: 93px;
+    }
+    @media screen and (min-width:1680px){
+      font-size: $title2-1680-font-size;
+      margin-top: 127px;
     }
   }
 }

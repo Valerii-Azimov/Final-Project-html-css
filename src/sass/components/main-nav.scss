@@ -16,7 +16,13 @@
     display: none;
     width: 568px;
     
-    @media screen and (min-width:1280px) {
+    @media screen and (min-width:1280px) and (min-width:1679px){
+      display: flex;
+      justify-content: space-between;
+      margin-left: 173px;
+    }
+    @media screen and (min-width:1680px){
+      font-size: $button-1680-font-size;
       display: flex;
       justify-content: space-between;
       margin-left: 173px;
@@ -25,11 +31,11 @@
   }
   
   &--item {
-    color: map-get($colors, secondary-color);
+    color: $secondary-color;
   }
 
   &--item:hover {
-    color: map-get($colors, main-color);
+    color: $main-color;
   }
 
 

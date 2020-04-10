@@ -1,17 +1,91 @@
-.bg{
-    background-image: url(../../images/bg-top-section.png);
-    background-position: top;
+.bg {
+  background-image: url(../../images/bg-top-section.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--second-section,
+  &--our-program {
+    background-color: $seventh-color;
+    margin-top: 51px;
+  }
+
+  &--second-section {
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      background-image: url(../../images/fire_tablet.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      background-image: url(../../images/fire_1280.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (min-width:1680px) {
+      background-image: url(../../images/fire_1680.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--our-program {
+    position: relative;
+  }
+
+  &--class {
+    position: absolute;
+    margin: -35px 183px;
+    width: 144px;
+    height: 170px;
+    background-image: url(../../images/class_mobile.jpg);
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      width: 405px;
+      height: 280px;
+      background-image: url(../../images/class_tablet.jpg);
+      margin: -222px 314px;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      width: 545px;
+      height: 394px;
+      background-image: url(../../images/class_1280.jpg);
+      margin: -715px -34px;
+    }
+
+    @media screen and (min-width:1680px) {
+      width: 700px;
+      height: 485px;
+      background-image: url(../../images/class_1680.jpg);
+      margin: -577px -167px;
+    }
+  }
+
+  &--registration {
+    background-image: url(../../images/bg-regisrtation_mobile.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    &--second-section, &--our-program {
-        background-color: $third-color;
-        margin-top: 51px;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      background-image: url(../../images/bg-regisrtation_tablet.jpg);
     }
-    &--our-program {
-        height: 1892px;
-        
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      background-image: url(../../images/bg-regisrtation_1280.jpg);
     }
-    // &--teacher{
-    //     background-color: red;
-    // }
+
+    @media screen and (min-width:1680px) {
+      background-image: url(../../images/bg-regisrtation_1680.jpg);
+    }
+  }
+
+  &--footer {
+    background-color: $seventh-color;
+  }
 }

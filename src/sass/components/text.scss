@@ -3,7 +3,7 @@
   font-size: $secondary-font-size;
   line-height: $secondary-line-hight;
   font-weight: $secondary-font-weight;
-  margin-top: 33px;
+  margin-top: 22px;
 
   @media screen and (min-width:1280px) and (max-width:1679px) {
     font-size: $secondary-text-font-size;
@@ -16,7 +16,7 @@
   }
 
   &--silver {
-    color: map-get($colors, secondary-color);
+    color: $secondary-color;
 
     @media screen and (min-width:1280px) and (max-width:1679px) {
       font-weight: $secondary-1280-font-weight;
@@ -24,12 +24,6 @@
   }
 
   &--orang {
-    color: map-get($colors, main-color);
-
-    @media screen and (min-width:1280px) {
-      position: absolute;
-      margin-top: -30px;
-      margin-left: 386px;
-    }
+    color: $main-color;
   }
 }

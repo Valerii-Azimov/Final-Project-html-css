@@ -1,12 +1,14 @@
 .advantages-list {
-  @media screen and (min-width:703px) and (max-width:1279px){
+  @media screen and (min-width:703px) and (max-width:1279px) {
     @include spase-between-flex($type: 'hor');
     margin-top: 117px;
   }
-  @media screen and (min-width:1280px){
+
+  @media screen and (min-width:1280px) {
     @include spase-between-flex($type: 'hor');
     margin-top: 108px;
   }
+
   &--item {
     font-family: $main-font-family;
     font-size: $advantages-list-font-size;
@@ -16,9 +18,8 @@
   }
 
   &--item:not(:first-child) {
-    @media screen and (max-width:702px){
+    @media screen and (max-width:702px) {
       margin-top: 25px;
-      
     }
   }
 
@@ -28,10 +29,10 @@
     border: 2px solid #ff6b08;
     margin-right: 0px;
     @include center-flex($type: 'ver');
-    @media screen and (min-width: 1280px){
+
+    @media screen and (min-width: 1280px) {
       min-width: 105px;
       min-height: 105px;
-     
     }
   }
 
@@ -39,29 +40,37 @@
     @include psevdo();
     width: 4px;
     height: 35px;
-    background-color: white;
+    background-color: $third-color;
     position: absolute;
     margin-left: 57px;
-    @media screen and (min-width: 1280px){
+
+    @media screen and (min-width: 1280px) {
       display: none;
     }
+  }
+
+  &--svg {
+    fill: $main-color;
+    margin: auto;
   }
 
   &--text {
     max-height: 57px;
     max-width: 129px;
     margin-left: 11px;
-    background-color: white;
+    background-color: $third-color;
     @include center-flex($type: 'all');
-    @media screen and (min-width:1280px){
+
+    @media screen and (min-width:1280px) {
       max-width: 347px;
       font-size: $advantages-list-1280-font-size;
       margin-left: -22px;
     }
   }
-  &--position{
-    @media screen and (min-width:1280px){
-    max-width: 259px;
+
+  &--position {
+    @media screen and (min-width:1280px) {
+      max-width: 259px;
     }
   }
 }

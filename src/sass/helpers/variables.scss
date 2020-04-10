@@ -6,55 +6,51 @@ $main-font-family: 'Montserrat', sans-serif;
 $title-font-size: 20px;
 $title-tablet-font-size: 26px;
 $title-1280-font-size: 48px;
+$title2-1280-font-size: 42px;
 $title-1680-font-size: 58px;
+$title2-1680-font-size: 46px;
 $secondary-font-size: 15px;
+$third-font-size: 22px;
+$fourth-font-size: 38px;
+$fiveth-font-size:25px;
 $secondary-text-font-size: 18px;
 $third-text-font-size: 20px;
 $secondary-text-1680-font-size: 21px;
+$secondary2-text-1680-font-size: 19px;
+$third-text-font-size: 29px;
+$fourth-text-font-size: 17px;
 $advantages-list-font-size: 13px;
 $advantages-list-1280-font-size: 21px;
 $menu-font-size: 12px;
 $button-font-size: 11px;
 $button-1280-font-size: 12px;
 $button-1680-font-size: 14px;
-$count-font-size: 13px;
+$count-font-size: 14px;
 
     // line-height
 $title-line-height: 1.5;
 $title-tablet-line-height:1.5;
 $secondary-line-hight: 1.5;
 $menu-line-hight: 1.5;
+$third-line-hight: 2;
 
     // font-weight
-$titel-font-weight: 800;
+$titel-font-weight: 800; //Extra Bold
 $secondary-font-weight: bold;
-$secondary-1280-font-weight: 500;
-$third-font-weight: 600;
-$fiveth-font-weight: 400;
+$secondary-1280-font-weight: 500; //Medium
+$third-font-weight: 600; //Semi Bold
+$fiveth-font-weight: 400; //Normal (Regular)
 
 
-// Color Map
-$colors: (
-    main-color: #ff6b08,
-    secondary-color: #b9b9b9,
-    third-color: #ffffff,
-);
+// Colors
+
 $main-color: #ff6b08;
 $secondary-color: #b9b9b9;
 $third-color: #ffffff;
 $fourth-color: #858585;
 $fiveth-color: #d1d1d1;
-
-// $main-color: #ff6b08;
-// $secondary-color: #b9b9b9;
-
-
-// $secondary-link-color: rgb(243, 129, 129);
-$third-color: rgb(51, 51, 51);
-// $fourth-color: rgb(153, 153, 153);
-// $fiveth-color: rgb(229, 229, 229);
-
-// $main-icon-color: rgb(149, 225, 211);
-
+$sixth-color: #f1f1f1;
+$seventh-color: #111517;
+$eighth-color: #919293;
 $link-color: rgb(255, 255, 255);
 $input-color:rgb(204, 204, 204);

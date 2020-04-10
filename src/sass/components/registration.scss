@@ -1,0 +1,165 @@
+.registration {
+  margin-top: 55px;
+
+  @media screen and (min-width:703px) and (max-width:1279px) {
+    margin-top: 75px;
+  }
+
+  @media screen and (min-width:1280px) and (max-width:1679px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width:1680px) {
+    margin-top: 125px;
+  }
+
+  &--title {
+    max-width: 231px;
+    padding-top: 57px;
+    margin: auto;
+    text-align: center;
+    color: $third-color;
+    font-size: $count-font-size;
+    font-weight: $titel-font-weight;
+    line-height: $third-line-hight;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      padding-top: 62px;
+      max-width: 546px;
+      font-size: $third-font-size;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      padding-top: 80px;
+      max-width: 933px;
+      font-size: $fourth-font-size;
+      line-height: $secondary-line-hight;
+    }
+
+    @media screen and (min-width:1680px) {
+      padding-top: 122px;
+      max-width: 933px;
+      font-size: $fourth-font-size;
+      line-height: $secondary-line-hight;
+    }
+  }
+
+  &--subtitle {
+    margin: 24px auto 0;
+    max-width: 244px;
+    text-align: center;
+    font-size: $button-font-size;
+    font-weight: $titel-font-weight;
+    line-height: $third-line-hight;
+    color: $third-color;
+
+    @media screen and (min-width:703px) and (max-width:1279px) {
+      margin: 24px auto 0;
+      max-width: 420px;
+      text-align: center;
+      font-size: $secondary-font-size;
+      font-weight: $third-font-weight;
+      line-height: $secondary-line-hight;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1679px) {
+      margin: 43px auto 0;
+      max-width: 543px;
+      text-align: center;
+      font-size: $secondary-text-font-size;
+      font-weight: $third-font-weight;
+      line-height: $secondary-line-hight;
+    }
+
+    @media screen and (min-width:1680px) {
+      margin: 52px auto 0;
+      max-width: 765px;
+      text-align: center;
+      font-size: $fiveth-font-size;
+      font-weight: $third-font-weight;
+      line-height: $secondary-line-hight;
+    }
+  }
+
+  &--subtitle-wrap {
+    display: none;
+
+    @media screen and (min-width:703px) {
+      display: initial;
+    }
+  }
+
+  &__input_form--wrap {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width:703px) and (max-width:1279px) {
+        margin-top: 37px;
+    //     display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    }
+
+  @media screen and (min-width:1280px) {
+    margin: 48px auto 0;
+      max-width: 622px;
+    //   display: flex;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+  }
+  }
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 280px;
+  height: 51px;
+  border: 2px solid $third-color;
+  background: transparent;
+  font-family: $main-font-family;
+  font-size: $advantages-list-font-size;
+  font-weight: $third-font-weight;
+  color: $third-color;
+
+  @media screen and (min-width:703px) and (max-width:1279px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width:1280px) {
+      width: 622px;
+      font-size: $advantages-list-1280-font-size;
+  }
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+  color: $third-color;
+  padding-left: 21px;
+  @media screen and (min-width:1280px){
+      padding-left: 25px;
+  }
+}
+
+input[type="tel"] {
+  margin-top: 20px;
+  @media screen and (min-width:1280px) {
+      margin-top: 28px;
+  }
+}
+
+input[type="text"]:focus:invalid {
+  border: 2px solid red;
+}
+
+input[type="text"]:focus:valid {
+  border: 2px solid green;
+}
+
+input[type="tel"]:focus:invalid {
+  border: 2px solid red;
+}
+
+input[type="tel"]:focus:valid {
+  border: 2px solid green;
+}
