@@ -1,6 +1,5 @@
 .contacts {
-  margin-top: 35px;
-  margin-bottom: 15px;
+  margin: 35px 0 15px 0;
 
   @media screen and (min-width:703px) and (max-width:1279px) {
     display: flex;
@@ -18,8 +17,8 @@
   }
 
   &__tel {
-    display: flex;
-    justify-content: center;
+    @include center-flex ($type: 'all');
+    max-width: 244px;
 
     @media screen and (min-width:703px) and (max-width:1279px) {
       order: 1;

@@ -1,30 +1,38 @@
 @mixin center-flex($type: 'all') {
-    display: flex;
-    
-    @if $type== 'all' {
-        justify-content: center;
-        align-items: center;
-    } @else if $type== 'hor' {
-        justify-content: center;
-    } @else if $type== 'ver' {
-        align-items: center;
-    }
+  display: flex;
+
+  @if $type=='all' {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $type=='hor' {
+    justify-content: center;
+  }
+
+  @else if $type=='ver' {
+    align-items: center;
+  }
 }
 
 @mixin spase-between-flex($type: 'all') {
-    display: flex;
-    
-    @if $type== 'all' {
-        justify-content: space-between;
-        align-items: center;
-    } @else if $type== 'hor' {
-        justify-content: space-between;
-    } @else if $type== 'ver' {
-        align-items: center;
-    }
+  display: flex;
+
+  @if $type=='all' {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @else if $type=='hor' {
+    justify-content: space-between;
+  }
+
+  @else if $type=='ver' {
+    align-items: center;
+  }
 }
 
 @mixin psevdo($display: inline-block, $content: "") {
-    display: $display;
-    content: $content;
+  display: $display;
+  content: $content;
 }

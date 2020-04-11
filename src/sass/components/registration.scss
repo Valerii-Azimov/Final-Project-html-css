@@ -94,20 +94,21 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     @media screen and (min-width:703px) and (max-width:1279px) {
-        margin-top: 37px;
-    //     display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
+      margin-top: 37px;
+      //     display: flex;
+      // justify-content: center;
+      // flex-wrap: wrap;
     }
 
-  @media screen and (min-width:1280px) {
-    margin: 48px auto 0;
+    @media screen and (min-width:1280px) {
+      margin: 48px auto 0;
       max-width: 622px;
-    //   display: flex;
-    //     justify-content: center;
-    //     flex-wrap: wrap;
-  }
+      //   display: flex;
+      //     justify-content: center;
+      //     flex-wrap: wrap;
+    }
   }
 }
 
@@ -127,8 +128,8 @@ input[type="tel"] {
   }
 
   @media screen and (min-width:1280px) {
-      width: 622px;
-      font-size: $advantages-list-1280-font-size;
+    width: 622px;
+    font-size: $advantages-list-1280-font-size;
   }
 }
 
@@ -136,15 +137,17 @@ input[type="text"]::placeholder,
 input[type="tel"]::placeholder {
   color: $third-color;
   padding-left: 21px;
-  @media screen and (min-width:1280px){
-      padding-left: 25px;
+
+  @media screen and (min-width:1280px) {
+    padding-left: 25px;
   }
 }
 
 input[type="tel"] {
   margin-top: 20px;
+
   @media screen and (min-width:1280px) {
-      margin-top: 28px;
+    margin-top: 28px;
   }
 }
 

@@ -5,13 +5,15 @@
   margin: auto;
   max-width: 100%;
 
-  @media screen and (min-width:703px) and (max-width:1279px){
+  @media screen and (min-width:703px) and (max-width:1279px) {
     width: 688px;
   }
-  @media screen and (min-width:1280px) and (max-width: 1679px){
+
+  @media screen and (min-width:1280px) and (max-width: 1679px) {
     width: 1210px;
   }
-  @media screen and (min-width:1680px){
+
+  @media screen and (min-width:1680px) {
     width: 1342px;
   }
 }
@@ -30,4 +32,3 @@ img {
   cursor: pointer;
   color: $link-color;
 }
-

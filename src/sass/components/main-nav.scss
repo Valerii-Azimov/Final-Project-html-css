@@ -1,12 +1,15 @@
 .main-nav {
   margin-top: 26px;
   @include spase-between-flex($type: 'all');
-  @media screen and (min-width:703px) and (max-width:1679px){
+
+  @media screen and (min-width:703px) and (max-width:1679px) {
     margin-top: 37px;
   }
-  @media screen and (min-width:1680px){
+
+  @media screen and (min-width:1680px) {
     margin-top: 28px;
   }
+
   &--menu {
     text-transform: uppercase;
     font-family: $main-font-family;
@@ -15,21 +18,22 @@
     font-weight: $secondary-font-weight;
     display: none;
     width: 568px;
-    
-    @media screen and (min-width:1280px) and (min-width:1679px){
+
+    @media screen and (min-width:1280px) and (min-width:1679px) {
       display: flex;
       justify-content: space-between;
       margin-left: 173px;
     }
-    @media screen and (min-width:1680px){
+
+    @media screen and (min-width:1680px) {
       font-size: $button-1680-font-size;
       display: flex;
       justify-content: space-between;
       margin-left: 173px;
     }
-    
+
   }
-  
+
   &--item {
     color: $secondary-color;
   }
@@ -49,8 +53,9 @@
       font-weight: $secondary-font-weight;
     }
   }
+
   &--burger {
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
       display: none;
     }
   }
