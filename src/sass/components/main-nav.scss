@@ -19,7 +19,7 @@
     display: none;
     width: 568px;
 
-    @media screen and (min-width:1280px) and (min-width:1679px) {
+    @media screen and (min-width:1280px) and (max-width:1679px) {
       display: flex;
       justify-content: space-between;
       margin-left: 173px;

@@ -571,18 +571,18 @@
     &--img {
       width: 279px;
       height: 214px;
-      background-image: url(../../images/teacher.jpg);
+      background-image: url(./../images/teacher.jpg);
 
       @media screen and (min-width:703px) and (max-width:1279px) {
         width: 247px;
         height: 321px;
-        background-image: url(../../images/teacher_tablet.jpg);
+        background-image: url(./../images/teacher_tablet.jpg);
       }
 
       @media screen and (min-width:1280px) {
         width: 494px;
         height: 644px;
-        background-image: url(../../images/teacher_1280.jpg);
+        background-image: url(./../images/teacher_1280.jpg);
       }
     }
 
@@ -758,7 +758,7 @@
       position: absolute;
       width: 13px;
       height: 19px;
-      background-image: url(../../images/icon/fire.png);
+      background-image: url(./../images/icon/fire.png);
 
       @media screen and (min-width:703px) and (max-width:1279px) {
         margin-left: -28px;

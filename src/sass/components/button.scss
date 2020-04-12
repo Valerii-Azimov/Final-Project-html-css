@@ -90,7 +90,7 @@
     }
 
     &--prev {
-      background-image: url(../../images/icon/prev.png);
+      background-image: url(./../images/icon/prev.png);
       left: 0;
 
       @media screen and (min-width:703px) {
@@ -99,7 +99,7 @@
     }
 
     &--next {
-      background-image: url(../../images/icon/next.png);
+      background-image: url(./../images/icon/next.png);
       right: 0;
 
       @media screen and (min-width:703px) {
