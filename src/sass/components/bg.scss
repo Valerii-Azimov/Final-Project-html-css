@@ -65,6 +65,12 @@
       margin: -577px -167px;
     }
   }
+  &--guarantees {
+    background-color: $sixth-color;
+    @media screen and (min-width:703px){
+      background-color: transparent;
+    }
+  }
 
   &--registration {
     background-image: url(./../images/bg-regisrtation_mobile.jpg);
@@ -88,4 +94,5 @@
   &--footer {
     background-color: $seventh-color;
   }
+
 }

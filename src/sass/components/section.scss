@@ -392,7 +392,7 @@
     &--position::before {
       display: block;
       position: absolute;
-      content: url(../../images/icon/Ellipse.png);
+      content: url(./../images/icon/Ellipse.png);
       margin-top: -32px;
       margin-left: -32px;
 
@@ -713,7 +713,7 @@
       content: "";
       display: block;
       width: 2px;
-      height: 285px;
+      height: 304px;
       border-left: 2px dotted $fourth-color;
       position: absolute;
       margin-left: 5px;

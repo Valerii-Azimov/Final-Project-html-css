@@ -82,6 +82,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 
     @media screen and (min-width:703px) {
       top: 48%;
@@ -132,6 +133,15 @@
       left: 50%;
       transform: translate(-50%, 0);
       margin-bottom: 101px;
+    }
+  }
+  &--burger {
+    width: 36px;
+    height: 15px;
+    background: transparent;
+    border: none;
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
 }
